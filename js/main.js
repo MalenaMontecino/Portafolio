@@ -1,10 +1,11 @@
-// AOS.init();
-// window.addEventListener('scroll', function () {
-//     var scrollPosition = window.scrollY;
-//     var helloWorld = document.getElementById('helloWorld');
-   
-//     helloWorld.style.fontSize = 16 + scrollPosition / 2 + 'px';
-   
-// });
-
-//CARRUSEL
+$(".custom-carousel").owlCarousel({
+    autoWidth: true,
+    loop: true
+  });
+  $(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+      $(".custom-carousel .item").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+  

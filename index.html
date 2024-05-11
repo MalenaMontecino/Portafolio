@@ -2,73 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- enlazar js y css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/css.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- enlazar js y css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/css.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'> -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
 
 </head>
+<div class="scroll scroll4">
+  <div class="content"></div>
+</div>
 
 <body>
-    
-    <div class="apartado" id="apartado1">
-        <p id="helloWorld">"Hello World!"</p>
-    </div>
-    <div class="apartado" id="apartado2">
-        <h1>Transformando ideas en realidad digital</h1>
-        <h2>Como desarrolladora de aplicaciones web</h2>
-      
-        <div data-aos="fade-up-right" style="width:20%; height: 40%; background-color: #E9E9E9; border-radius: 15px;">
 
 
-
-
-
-        </div>
-
-    </div>
-    <div class="apartado" id="apartado3">
-      <div id="carousel">
-            <ul>
-                <li class="pane1"><h2>  - -  > </h2></li>
-                <li class="pane2"><h2>...or drag...</h2></li>
-                <li class="pane3"><h2>...or swipe...</h2></li>
-                <li class="pane4"><h2>..or drag...</h2></li>
-                <li class="pane5"><h2>Dit is het einde!</h2></li>
-            </ul>
-       </div>
-       
-        
+  <div class="apartado" id="apartado1" style="align-items: center;justify-content: center;">
+    <p id="helloWorld">"Hello World!"</p>
+  </div>
+  <div class="light-ball ball0"></div>
+  <div class="light-ball ball01"></div>  
+ 
+    <!-- partial:index.partial.html -->
+   
+    <div  id="apartado2" style=" display:flex;justify-content: center;align-items: start;">
+   
+      <h1 data-aos="zoom-in-up">TRANSFORMANDO IDEAS EN REALIDAD DIGITAL</h1>
   
+    </div>
+    <section data-aos="fade-up" class="game-section">
+      <h2>PROYECTOS</h2>
+      <h2 id="proyectos" class="line-title mb-2"></h2>
+      <div class="owl-carousel custom-carousel owl-theme ">
+        <div class="item active" style="backdrop-filter: blur(50px);border: 1px solid white;background: border-box; ">
+          <div class="item-desc">
+            <h3>Prueba</h3>
+            <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+              Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(/img/collection.png);">
+          <div class="item-desc">
+            <h3>Collections</h3>
+            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+              of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+        style="background-image: url(/img/penjat.png);">
+        <div class="item-desc">
+          <h3>Ahorcado</h3>
+          <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+            of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+        <div class="item"
+          style="background-image: url(/img/Pomodoro.png);">
+          <div class="item-desc">
+            <h3>Pomodoro</h3>
+            <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+              Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+          <div class="item-desc">
+            <h3>Juego de Rol</h3>
+            <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+              Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+          <div class="item-desc">
+            <h3>Kind Meals</h3>
+            <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+              for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+          <div class="item-desc">
+            <h3>Autoevaluación</h3>
+            <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+              which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+          <div class="item-desc">
+            <h3>Restaurante</h3>
+            <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+              which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+          style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+          <div class="item-desc">
+            <h3>Pokédex</h3>
+            <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+              which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div class="item"
+        style="background-image: url(/img/kenia.png);">
+        <div class="item-desc">
+          <h3>Kenia</h3>
+          <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+            which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      </div>
+  </div>
+  </section>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 
+
+  <div class="apartado" id="apartado4"> </div>
+  
+  <div class="apartado" id="apartado3">
+
+
+    <div class="light-ball ball1"></div>
+    <div class="light-ball ball2"></div>
+  </div>
+ 
+  <div class="apartado" id="apartado5">
+    <div id="carousel">
+      <ul>
+        <li class="pane1">
+          <h2> - - > </h2>
+        </li>
+        <li class="pane2">
+          <h2>...or drag...</h2>
+        </li>
+        <li class="pane3">
+          <h2>...or swipe...</h2>
+        </li>
+        <li class="pane4">
+          <h2>..or drag...</h2>
+        </li>
+        <li class="pane5">
+          <h2>Dit is het einde!</h2>
+        </li>
+      </ul>
     </div>
-    <div class="apartado" id="apartado4">
-       
-    </div>
-    <div class="apartado" id="apartado5"></div>
+  </div>
 
 </body>
 
 </html>
 <script>
-    AOS.init();
-window.addEventListener('scroll', function () {
+  AOS.init();
+  window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     var helloWorld = document.getElementById('helloWorld');
-   
-    helloWorld.style.fontSize = 16 + scrollPosition / 2 + 'px';
-   
-});
-</script>
 
+    helloWorld.style.fontSize = 16 + scrollPosition / 5 + 'px';
+
+  });
+</script>
+<script src="js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.js"></script>
-  <script src="/js/carrusel.js"> 
-  </script>
-  
+<script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.js"></script>
+<script src="/js/carrusel.js">
+</script>
