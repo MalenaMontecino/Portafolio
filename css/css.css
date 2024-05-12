@@ -54,6 +54,7 @@ p{
     border-radius: 50%;
     background: radial-gradient(circle, #135464 40%, #051E25 150%);
      filter: blur(100px); 
+     z-index: -1;
   }
   .ball0{
     width: 80vh;
@@ -67,7 +68,7 @@ p{
     width: 80vh;
     height: 80vh;
     left: 80%;
-    top: 150%;
+    top: 30%;
     
     /* display: flex;
     align-items: center;
@@ -305,13 +306,9 @@ a:hover {
   color: #e73700;
 }
 #proyectos {
-  margin-bottom: 48px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  position: relative;
-  text-transform: capitalize;
+ /* display: flex;
+ align-items: center;
+ justify-content: center; */
 }
 h3 {
   margin: 0 0 10px;
