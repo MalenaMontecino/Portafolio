@@ -8,12 +8,15 @@ body {
     overflow-x: hidden; 
     overflow-y: visible ;
 }
+.destacar{
+  color: #60E8D2;
+}
 h1{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
-    color: #E9E9E9;
+    color: #ffffff;
     z-index: 2;
 }
 h2{
@@ -21,13 +24,13 @@ h2{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #E9E9E9;
+    color: #ffffff;
 }
 p{
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #E9E9E9;
+    color: #ffffff;
 }
 
 /* #helloWorld p {
@@ -156,11 +159,11 @@ p{
 
 
 #helloWorld {
-    font-family: "Roboto Mono", monospace;
+    /* font-family: "Roboto Mono", monospace; */
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: #E9E9E9;
+    /* color: #E9E9E9; */
     white-space: nowrap;
     /* Mantener el texto en una sola línea */
 }
@@ -207,7 +210,7 @@ p{
 }
  */
 
-CARRUSEL
+/* CARRUSEL */
 
 html, body, #carousel, #carousel ul, #carousel li {
     min-height: 100%;
