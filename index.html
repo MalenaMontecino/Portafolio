@@ -37,15 +37,25 @@
         <h1 id="helloWorld">¡Hello World!</h1>
       </div>
       <div class="row" style="display: flex; flex-direction: row;">
-        <h2 style="width: fit-content;">Soy Malena,</h2><h2 class="destacar"style="width: fit-content;">desarrolladora web. </h2>
-      </div>   
-      <div class="row"><h2>
-          Me apasiona diseñar y desarrollar aplicaciones tanto funcionales como visualmente atractivas.
-          Explora mis proyectos y descubre cómo puedo ayudarte a transformar tus ideas en realidad.
+        <div class="col-8">
 
-          ¡Bienvenido/a a mi portafolio!</h2>
-     </div>
+          <h2 style="width: fit-content;">Soy Malena,</h2>
+          <h2 class="destacar" style="width: fit-content;">desarrolladora web. </h2> <br>
 
+          <!-- <div class="row"> -->
+          <h2>
+            Me apasiona diseñar y desarrollar aplicaciones <br>tanto  funcionales como visualmente atractivas.<br>
+            Explora mis proyectos y descubre cómo puedo ayudarte a transformar tus ideas en realidad. <br><br>
+
+            ¡Bienvenido/a a mi portafolio!</h2>
+
+            <button class="botones" style="margin-top: 5%;">Sobre mí</button>
+          <!-- </div> -->
+        </div>
+        <div class="col-4">
+          <img src="img/logo.PNG" alt="malena" class="img-fluid" style="width: 100%;">
+        </div>
+      </div>
     </div>
     <div class="container col-4"></div>
 
@@ -54,14 +64,49 @@
 
   <!-- APARTADO 2 CARRUSEL PROYECTOS-->
 
-  <div id="apartado2" style=" display:flex;justify-content: center;align-items: start;">
+  <div id="apartado2">
 
+    <!-- NAV BAR IN -->
+    <div class="col-12" style="display: flex; justify-content:center; align-items:center;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav"
+            style="display: flex; justify-content:center; align-items:center;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- NAV BAR OUT -->
+
+
+  </div>
+  <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
     <h1 data-aos="zoom-in-up">TRANSFORMANDO IDEAS EN REALIDAD DIGITAL</h1> <br>
-
   </div>
-  <div style=" display:flex;justify-content: center;align-items: start;">
-    <!-- <h2 id="proyectos">PROYECTOS</h2> -->
-  </div>
+  <!-- <div style=" display:flex;justify-content: center;align-items: start;">
+   
+  </div> -->
   <section data-aos="fade-up" class="game-section">
 
 
@@ -150,7 +195,9 @@
 
   <!-- APARTADO 4 -->
   <div class="apartado" id="apartado4">
-
+    <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
+      <h1 data-aos="zoom-in-up">SKILLS</h1> <br>
+    </div>
     <div class="skill-card">
       <div class="skill">JavaScript</div>
       <div class="skill">PHP</div>
@@ -167,11 +214,35 @@
   <!-- APARTADO 3 LUCES EN MOVIMIENTO -->
   <div class="apartado" id="apartado3">
 
-
+    <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
+      <h1 data-aos="zoom-in-up">sobre mí</h1> <br>
+    </div>
     <div class="light-ball ball1"></div>
     <div class="light-ball ball2"></div>
   </div>
+  <div class="apartado" id="apartado4">
+
+    <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
+      <h1 data-aos="zoom-in-up">Blog</h1> <br>
+    </div>
+    
+  </div>
+  <div class="apartado" id="apartado6">
+
+    <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
+      <h1 data-aos="zoom-in-up">Contacto</h1> <br>
+    </div>
+   
+  </div>
+  <div class="apartado" id="apartado7">
+
+    <div class="col-12 mt-5" style=" display:flex;justify-content: center;align-items: start;">
+      <h1 data-aos="zoom-in-up">Feedback</h1> <br>
+    </div>
+   
+  </div>
   <!-- APARTADO 5 CARRUSEL COMPLETO -->
+
   <div class="apartado" id="apartado5">
     <div id="carousel">
       <ul>
@@ -214,15 +285,15 @@
 </html>
 <script>
   AOS.init();
-//   window.addEventListener('scroll', function () {
-//     var scrollPosition = window.scrollY;
-//     var helloWorld = document.querySelectorAll('#helloWorld');
-// helloWorld.forEach(element => {
-//   element.style.fontSize = 40 + scrollPosition / 5 + 'px';
-// });
-   //helloWorld.style.fontSize = 16 + scrollPosition / 5 + 'px';
+  //   window.addEventListener('scroll', function () {
+  //     var scrollPosition = window.scrollY;
+  //     var helloWorld = document.querySelectorAll('#helloWorld');
+  // helloWorld.forEach(element => {
+  //   element.style.fontSize = 40 + scrollPosition / 5 + 'px';
+  // });
+  //helloWorld.style.fontSize = 16 + scrollPosition / 5 + 'px';
 
- // });
+  // });
 </script>
 <script src="js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
