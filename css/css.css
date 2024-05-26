@@ -9,7 +9,9 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
 }
-
+#intro .container{
+  margin-top:20vh;
+}
 .botones {
   border-radius: 50px;
   background-color: #60e8d124 !important;
@@ -27,7 +29,8 @@ body {
 .navbar {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.075) !important;
-  width: 90vh;
+  width: fit-content;
+
   height: 6vh;
   border: 0.1px solid #ffffff63;
 }
@@ -76,6 +79,7 @@ p {
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 /* #helloWorld p {
@@ -117,16 +121,20 @@ p {
   transform: translateY(-5px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-/* LUCES */
-.apartado {
-  position: relative;
+/* NAVBAR */
+.sticky-navbar {
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  z-index: 1000;
 }
+/* LUCES */
+
 
 .light-ball {
   position: absolute;
-  width: 45vh;
-  height: 45vh;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%;
   background: radial-gradient(circle, #135464 40%, #051E25 150%);
   filter: blur(100px);
@@ -136,10 +144,6 @@ p {
 .ball0 {
   width: 80vh;
   height: 80vh;
-
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .ball01 {
@@ -147,21 +151,19 @@ p {
   height: 80vh;
   left: 80%;
   top: 30%;
-
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
-.ball1 {
+.hardSkills {
   top: 20%;
   left: 20%;
+  background: radial-gradient(circle, #60E8D2 40%, #051E25 150%);
   animation: moveBall1 10s infinite alternate;
 }
 
-.ball2 {
+.softSkills {
   top: 70%;
   left: 50%;
+  background: radial-gradient(circle, #60E8D2 40%, #051E25 150%);
   animation: moveBall2 8s infinite alternate;
 }
 
@@ -223,14 +225,63 @@ p {
   white-space: nowrap;
   /* Mantener el texto en una sola línea */
 }
+#sobremi .container{
+  width: 90%;
 
+}
+#card0{
+  background-color: #ffffff09;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 95%;
+  transition: transform 0.3s ease-in-out;
+}
+#card1{
+  background-color: #ffffff09;
+  border: 1px solid white;
+  border-radius:10px;
+  padding: 30px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out; 
+  /* width: 0%; */
+}
+#card0:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+#card1:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+#card2{
+  background-color: #ffffff09;
+  border: 1px solid white;
+  border-radius:10px;
+  padding: 30px;
+  margin: 0;
+  width: 65%;
+  
+}
+.lista-objetivos {
+  list-style-type: none; /* Elimina los estilos de la lista */
+  padding: 0; /* Elimina el relleno predeterminado */
+
+}
+.lista-objetivos li {
+ margin-bottom: -15px !important;
+
+}
+#skills{
+     position: relative;
+     /* para las balls en mvimiento */
+}
 .apartado {
   height: 100vh;
-  /* border: 5px solid #E9E9E9;  */
-  display: flex;
+  width: 100vw;
+
+    /* border: 2px solid white; */
 
   overflow: hidden;
-  /* Para ocultar el texto que se desborda */
+
 }
 
 
@@ -254,7 +305,7 @@ p {
 .scroll4::-webkit-scrollbar {
   width: 10px;
 }
- 
+
 .scroll4::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 20px;
@@ -690,3 +741,33 @@ h3 {
   background-color: #ffffff;
   color: #0F4554;
 }
+/* video interactivo IN */
+#blog  .container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+}
+#blog video {
+  width: 60%;
+  height: auto;
+}
+#blog .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 20px;
+}
+#blog .button {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+}
+#blog .button.active {
+  background-color: rgb(194, 228, 239);
+  color: #000 !important;
+}
+/* video interactivo OUT */
