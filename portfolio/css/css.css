@@ -152,6 +152,18 @@ p {
   left: 80%;
   top: 30%;
 }
+.ball02 {
+  width: 80vh;
+  height: 80vh;
+  left: 0%;
+  top: 320%;
+}
+.ball03 {
+  width: 100vh;
+  height: 100vh;
+  left: 60%;
+  top: 300%;
+}
 
 .hardSkills {
   top: 20%;
@@ -771,3 +783,30 @@ h3 {
   color: #000 !important;
 }
 /* video interactivo OUT */
+.form-control{
+  background-color: #ffffff45;
+}
+#feedback {
+  position: relative;
+  padding-bottom: 100px; /* Espacio suficiente para el footer */
+}
+
+.custom-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 30px; /* Ajusta la distancia desde la parte inferior */
+  width: 100%;
+}
+
+.footer-line {
+  width: 80%; /* Ajusta el ancho total de la línea */
+  height: 2px;
+  background-color: white; /* Color de la línea */
+  margin-bottom: 10px; /* Espacio entre la línea y el logo */
+}
+
+.footer-logo {
+  height: 50px; /* Ajusta el tamaño del logo */
+}
